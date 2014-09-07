@@ -4,8 +4,5 @@
 
 """This is my first trial of a Python script."""
 
-#def greet(name):
-#    print 'Hello '+name+'!'
-
-input_name = input("Hi! What's your name?")
-print ("It's nice to meet you, " + input_name)
+input_name = raw_input("Hi! What's your name? ")
+print "It's nice to meet you,", input_name
