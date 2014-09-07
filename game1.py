@@ -5,6 +5,7 @@
 
 """You can have a nice conversation with a computer."""
 
+import re
 
 #----- Functions -----#
 
@@ -35,9 +36,10 @@ def hobbyInputParse(user_input):
 
 #----- User-Input Variables -----#
 
-# Asks the user for their name and repeats it back
+# Asks the user for their name and repeats it back without punctuation
 input_name = raw_input("Hi! What's your name? ")
-print ("It\'s nice to meet you, {}!".format(input_name))
+name_sanitized = re.sub(r'[^\w\input_name]','',input_name)
+print ("It\'s nice to meet you, {}!".format(name_sanitized))
 
 #asks the user a yes or no question
 input_hobby_yn = raw_input("Do you have any hobbies? ")
