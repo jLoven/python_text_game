@@ -4,4 +4,5 @@
 
 """This is my first trial of a Python script."""
 
-print 'Hello'
+def greet(name):
+    print 'Hello '+name+'!'
