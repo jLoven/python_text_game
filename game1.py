@@ -14,13 +14,13 @@ def isItYes(user_input):
         return 0
 
 def youLikeTo(user_input):
-    # Tests if the user input is in form "I like to ..." and outputs "to ..."
+    # If the user input is in form "I like to ..." it outputs "to ..."
     i_like, like_, to_hobby = user_input.partition("like ")
     return to_hobby
 
 def youLike(user_input):
-    # Tests if the user input is in form "I like ...ing" and outputs "...ing"
-    i_like, like_, hobbying = user_input.partition("like ")
+    # If the user input is in form "I do/like ...ing" it outputs "...ing" and anything after
+    hobbying = user_input[user_input.rfind(' ',0,user_input.index('ing'))+1:]
     return hobbying
 
 def hobbyInputParse(user_input):
