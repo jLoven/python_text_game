@@ -1,8 +1,10 @@
 # Jackie Loven
 # 6 September 2014
+# Last Edited 7 September 2014
 # Text-Based Conversation
 
 """You can have a nice conversation with a computer."""
+
 
 #----- Functions -----#
 
