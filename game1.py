@@ -22,7 +22,7 @@ def youLikeTo(user_input):
 
 def youLike(user_input):
     # If the user input is in form "I do/like ...ing" it outputs "...ing" and anything after
-    hobbying = user_input[user_input.rfind(' ',0,user_input.index('ing'))+1:]
+    hobbying = user_input[user_input.rfind(' ', 0, user_input.index('ing')) + 1:]
     return hobbying
 
 def hobbyInputParse(user_input):
